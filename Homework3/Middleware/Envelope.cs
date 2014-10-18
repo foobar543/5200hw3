@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Messages;
 
 namespace Homework3.Middleware
 {
@@ -11,5 +12,8 @@ namespace Homework3.Middleware
      */
     class Envelope
     {
+		private Message message;
+		//TODO: add public end point
+		//TODO: add constructor, getters and setters
     }
 }
