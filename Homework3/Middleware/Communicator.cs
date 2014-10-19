@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Net.Sockets;
 
 namespace Homework3.Middleware
 {
@@ -11,7 +12,12 @@ namespace Homework3.Middleware
     receiver End Points).   Each process in the system will have one Communicator through 
     which it sends and received all messages.
      */
-    class Communicator
+    public class Communicator
     {
+        public int Send(Envelope envelope)
+        {
+            UdpClient udpClient = new UdpClient();
+            return udpClient.Send(envelope.bytes, envelope.length, envelope.endPoint);
+        }
     }
 }
