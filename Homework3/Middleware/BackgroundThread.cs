@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 namespace Homework3.Middleware
 {
@@ -10,7 +11,7 @@ namespace Homework3.Middleware
     agent to stop and start the BackgroundThread.  It can also encapsulate all the attributes 
     and any other behaviors that are common to the Listener and Doers
      */
-    class BackgroundThread
+    class BackgroundThread:Thread
     {
     }
 }

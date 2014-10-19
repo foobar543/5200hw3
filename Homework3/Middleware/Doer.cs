@@ -20,7 +20,7 @@ namespace Homework3.Middleware
     handle).  The classes for those concrete strategy objects should be defined and created 
     in application-layer components, not the Common library
      */
-    class Doer
+    class Doer:BackgroundThread
     {
     }
 }
