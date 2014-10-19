@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Net;
 using Messages;
 
 namespace Homework3.Middleware
@@ -13,6 +14,10 @@ namespace Homework3.Middleware
     class Envelope
     {
 		private Message message;
+        public Byte[] bytes;
+        public Int32 length;
+        public IPEndPoint endPoint;
+
 		//TODO: add public end point
 		//TODO: add constructor, getters and setters
     }
